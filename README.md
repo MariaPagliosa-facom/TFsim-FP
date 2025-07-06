@@ -16,8 +16,8 @@ Além disso, foi necessário alterar a conversão dos valores lidos como operand
 - res_station.cpp, res_station_rob.cpp}: adição das instruções no trecho de código que cuida da execução das intruções no simulador, para que a lógica por trás das operações se mantesse correta;
 - res_vector.cpp e res_vector_rob.cpp: adição das novas instruções e especificação do seu tipo, além de modificar o tipo dos valores resultantes de operações anteriores quando disponibilizados pelas Estações de Reserva, de inteiro para float.
 
-### Experimentação
-Inicialmente, foram desenvolvidos testes bem simples para garantir o funcionamento correto das novas instruções de ponto flutuante implementadas, como a soma, subtração, divisão e multiplicação direta entre dois valores FP. Depois desses testes preliminares, foram desenvolvidos dois trechos de código em MIPS64, adicionados na mesma pasta que contém os benchmarks do simulador, para que pudessem ser utilizados como tais:
+### Experimentação:
+Inicialmente, foram desenvolvidos testes bem simples para garantir o funcionamento correto das novas instruções de ponto flutuante implementadas, como a soma, subtração, divisão e multiplicação direta entre dois valores FP. Depois desses testes preliminares, foram desenvolvidos dois trechos de código em MIPS64, que foram armazenados na mesma pasta que contém os benchmarks do simulador, para que pudessem ser utilizados como tais:
 
 - Soma dos termos de uma PA: realiza a soma dos termos de uma progressão aritmética com razão decimal, utilizando FADDI, FADD e FMUL.
 - Quadrado da diferença: calcula $(a - b)^2$ utilizando FADDI, FADD, FSUB e FMUL;
